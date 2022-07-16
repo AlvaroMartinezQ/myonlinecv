@@ -24,17 +24,13 @@
       <div class="row items-center justify-evenly">
         <h2 class="sweetfont">`It always seems impossible until it's done`</h2>
       </div>
-      <q-icon :name="mdiLinkedin" :color="$q.dark.isActive ? 'secondary' : 'black'" size="2.5em" class="q-mx-sm" />
-      <q-icon :name="mdiGithub" :color="$q.dark.isActive ? 'secondary' : 'black'" size="2.5em" class="q-mx-sm" />
+      <ContactLinksVue />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useQuasar } from 'quasar'
-import { mdiLinkedin, mdiGithub } from '@mdi/js';
-
-const $q = useQuasar();
+import ContactLinksVue from 'src/components/contact/ContactLinks.vue';
 </script>
 
 <style scoped>
