@@ -7,5 +7,5 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const msg = ref('index page');
+const msg = ref('contact page');
 </script>

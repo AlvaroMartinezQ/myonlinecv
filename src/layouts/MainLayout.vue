@@ -3,12 +3,21 @@
     <q-header elevated>
       <div class="row gradient_style"></div>
       <q-toolbar>
-        <q-toolbar-title>
+        <q-toolbar-title class="row align-center justify-center">
           <q-tabs v-model="tab" class="text-secondary" inline-label>
-            <q-tab name="mails" icon="home" label="Mails" />
-            <q-tab name="alarms" icon="face" label="About" />
-            <q-tab name="movies" icon="alternate_email" label="Contact" />
+            <q-tab name="home" icon="home" label="Home" />
+            <q-tab name="about" icon="face" label="About" />
+            <q-tab name="projects" icon="topic" label="Projects" />
+            <q-tab name="contact" icon="alternate_email" label="Contact" />
           </q-tabs>
+          <q-toggle
+            v-model="dark_mode"
+            :color="dark_mode ? 'black' : 'white'"
+            :icon="dark_mode ? 'dark_mode' : 'light_mode'"
+            @click="$q.dark.set(dark_mode)"
+            keep-color
+            size="md"
+          />
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -24,9 +33,25 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { useQuasar } from 'quasar'
+import { ref, watch } from 'vue';
+import { useRouter } from 'vue-router';
 
-const tab = ref('mails');
+const $q = useQuasar()
+const $router = useRouter();
+
+const tab = ref('home');
+const dark_mode = ref(true);
+
+$q.dark.set(dark_mode.value);
+
+watch(tab, (new_val) => {
+  if (new_val === 'home') {
+    $router.push({ name: 'home_page' });
+  } else {
+    $router.push({ name: new_val + '_page' });
+  }
+})
 </script>
 
 <style scoped>
