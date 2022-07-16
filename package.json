@@ -2,7 +2,7 @@
   "name": "myonlinecv",
   "version": "0.0.1",
   "description": "Personal online cv",
-  "productName": "MyOnlineCV",
+  "productName": "AMQ - CV",
   "author": "AlvaroMartinezQ <alvaroo2302@gmail.com>",
   "private": true,
   "scripts": {

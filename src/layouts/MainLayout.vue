@@ -1,16 +1,14 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <div class="row gradient_style">
-      </div>
+      <div class="row gradient_style"></div>
       <q-toolbar>
         <q-toolbar-title>
-          <div class="row align-center justify-center">
-            <q-btn flat color="secondary" label="Home" class="q-mx-xs header_selected_button" />
-            <q-btn flat color="secondary" label="About" class="q-mx-xs header_selected_button" />
-            <q-btn flat color="secondary" label="Link" class="q-mx-xs header_selected_button" />
-            <q-btn flat color="secondary" label="Link" class="q-mx-xs header_selected_button" />
-          </div>
+          <q-tabs v-model="tab" class="text-secondary" inline-label>
+            <q-tab name="mails" icon="home" label="Mails" />
+            <q-tab name="alarms" icon="face" label="About" />
+            <q-tab name="movies" icon="alternate_email" label="Contact" />
+          </q-tabs>
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -18,12 +16,17 @@
       <router-view />
     </q-page-container>
     <q-footer class="q-py-sm">
-      <div class="row align-center justify-center">{{ new Date().getFullYear() }} - Quasar v{{ $q.version }}</div>
+      <div class="row align-center justify-center">
+        {{ new Date().getFullYear() }} - Quasar v{{ $q.version }}
+      </div>
     </q-footer>
   </q-layout>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+
+const tab = ref('mails');
 </script>
 
 <style scoped>
