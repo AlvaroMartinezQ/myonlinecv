@@ -26,7 +26,7 @@
     </q-page-container>
     <q-footer class="q-py-sm">
       <div class="row align-center justify-center">
-        {{ new Date().getFullYear() }} - Quasar v{{ $q.version }}
+        Copyright &copy; {{ new Date().getFullYear() }} AMQ. All rights reserved
       </div>
     </q-footer>
   </q-layout>
@@ -37,7 +37,7 @@ import { useQuasar } from 'quasar'
 import { ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
-const $q = useQuasar()
+const $q = useQuasar();
 const $router = useRouter();
 
 const tab = ref('home');
