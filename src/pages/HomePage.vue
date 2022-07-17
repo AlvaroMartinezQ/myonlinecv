@@ -5,7 +5,7 @@
         <div class="col-4"><q-separator></q-separator></div>
         <div class="col-4">
           <q-img
-            src="src/assets/amq-photo.jpg"
+            src="~assets/amq-photo.jpg"
             class="personal_pic shadow-4"
             fit="cover"
           >

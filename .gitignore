@@ -34,3 +34,6 @@ yarn-error.log*
 
 # env vars
 .env
+
+# deployment file
+deploy.sh

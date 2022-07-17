@@ -8,7 +8,7 @@
           <div class="row q-mx-md text-overline">
             <div class="col-6 text-center">
               <q-img
-                src="src/assets/amq-photo.jpg"
+                src="~assets/amq-photo.jpg"
                 class="personal_pic shadow-4"
                 fit="cover"
               >
