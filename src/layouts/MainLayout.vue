@@ -26,7 +26,19 @@
     </q-page-container>
     <q-footer class="q-py-sm">
       <div class="row align-center justify-center">
+        <q-space></q-space>
         Copyright &copy; {{ new Date().getFullYear() }} AMQ. All rights reserved
+        <q-space></q-space>
+        <q-btn
+          href="https://github.com/AlvaroMartinezQ/myonlinecv"
+          label="Codebase"
+          color="secondary"
+          class="q-mr-sm q-pa-xs"
+          icon="code"
+          target="_blank"
+          size="sm"
+          flat
+        ></q-btn>
       </div>
     </q-footer>
   </q-layout>
