@@ -7,6 +7,13 @@ const learn_timeline = [
     icon: 'school',
   },
   {
+    title: 'Introduction to Kubernetes',
+    subtitle: 'Udemy | 2022',
+    side: 'left',
+    text: 'Recently I`ve decided to get more in touch with cloud technologies and completed this course in July 2022. I`ll be getting more in touch with k8s since, for me, it`s a really interesting & useful topic.',
+    icon: 'school',
+  },
+  {
     title: 'Web development course',
     subtitle: 'Tomillo | September 2019 - September 2020',
     side: 'left',

@@ -19,8 +19,10 @@
             />
           </q-tabs>
           <q-btn-dropdown
-            color="primary"
-            label="Dropdown Button"
+            color="secondary"
+            label="Links"
+            size="sm"
+            text-color="black"
             v-else
           >
             <q-list>
@@ -72,7 +74,7 @@
 </template>
 
 <script setup lang="ts">
-import { useQuasar } from 'quasar'
+import { useQuasar } from 'quasar';
 import { ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -88,8 +90,8 @@ const tabs = ref([
   { name: 'home', icon: 'home', label: 'Home' },
   { name: 'about', icon: 'face', label: 'About' },
   { name: 'projects', icon: 'topic', label: 'Projects' },
-  { name: 'contact', icon: 'alternate_email', label: 'contact' }
-])
+  { name: 'contact', icon: 'alternate_email', label: 'contact' },
+]);
 
 watch(current_tab, (new_val) => {
   if (new_val === 'home') {
@@ -97,7 +99,7 @@ watch(current_tab, (new_val) => {
   } else {
     $router.push({ name: new_val + '_page' });
   }
-})
+});
 </script>
 
 <style scoped>

@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { useQuasar } from 'quasar'
+import { useQuasar } from 'quasar';
 import { mdiLinkedin, mdiGithub } from '@mdi/js';
 import { ref } from 'vue';
 import ContactLink from 'src/types/ContactLink';
@@ -34,6 +34,6 @@ const github_link = ref(import.meta.env.VITE_LINK_GITHUB as string);
 
 const links = ref([
   { name: 'LinkedIn', url: linkedin_link.value, icon: mdiLinkedin },
-  { name: 'Github', url: github_link.value, icon: mdiGithub }
-] as ContactLink[])
+  { name: 'Github', url: github_link.value, icon: mdiGithub },
+] as ContactLink[]);
 </script>

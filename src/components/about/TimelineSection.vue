@@ -38,14 +38,14 @@ const props = defineProps({
   icon: {
     type: String,
     required: true,
-  }
-})
+  },
+});
 
-const $q = useQuasar()
+const $q = useQuasar();
 
 const layout = computed(() => {
-  return $q.screen.lt.sm ? 'dense' : ($q.screen.lt.md ? 'comfortable' : 'loose')
-})
+  return $q.screen.lt.sm ? 'dense' : $q.screen.lt.md ? 'comfortable' : 'loose';
+});
 </script>
 
 <style scoped lang="scss">

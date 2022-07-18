@@ -1,7 +1,7 @@
 type ContactLink = {
-  name: string,
-  url: string,
-  icon: string,
-}
+  name: string;
+  url: string;
+  icon: string;
+};
 
-export default ContactLink
+export default ContactLink;
