@@ -53,7 +53,9 @@ module.exports = configure(function (/* ctx */) {
         node: 'node16',
       },
 
-      vueRouterMode: 'history', // available values: 'hash', 'history'
+      // Keep the Vue router mode as hash since Github Pages
+      // returns a 404 on page reloadind if history mode is set up.
+      vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
