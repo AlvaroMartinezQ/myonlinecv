@@ -4,12 +4,39 @@
       <div class="row gradient_style"></div>
       <q-toolbar>
         <q-toolbar-title class="row align-center justify-center">
-          <q-tabs v-model="tab" class="text-secondary" inline-label>
-            <q-tab name="home" icon="home" label="Home" />
-            <q-tab name="about" icon="face" label="About" />
-            <q-tab name="projects" icon="topic" label="Projects" />
-            <q-tab name="contact" icon="alternate_email" label="Contact" />
+          <q-tabs
+            v-model="current_tab"
+            class="text-secondary"
+            inline-label
+            v-if="!$q.platform.is.mobile"
+          >
+            <q-tab
+              v-for="tab in tabs"
+              v-bind:key="tab.name"
+              :name="tab.name"
+              :icon="tab.icon"
+              :label="tab.label"
+            />
           </q-tabs>
+          <q-btn-dropdown
+            color="primary"
+            label="Dropdown Button"
+            v-else
+          >
+            <q-list>
+              <q-item
+                v-for="tab in tabs"
+                v-bind:key="tab.name"
+                clickable
+                v-close-popup
+                @click="current_tab = tab.name"
+              >
+                <q-item-section>
+                  <q-item-label>{{ tab.label }}</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
           <q-toggle
             v-model="dark_mode"
             :color="dark_mode ? 'black' : 'white'"
@@ -52,12 +79,19 @@ import { useRouter } from 'vue-router';
 const $q = useQuasar();
 const $router = useRouter();
 
-const tab = ref('home');
+const current_tab = ref('home');
 const dark_mode = ref(true);
 
 $q.dark.set(dark_mode.value);
 
-watch(tab, (new_val) => {
+const tabs = ref([
+  { name: 'home', icon: 'home', label: 'Home' },
+  { name: 'about', icon: 'face', label: 'About' },
+  { name: 'projects', icon: 'topic', label: 'Projects' },
+  { name: 'contact', icon: 'alternate_email', label: 'contact' }
+])
+
+watch(current_tab, (new_val) => {
   if (new_val === 'home') {
     $router.push({ name: 'home_page' });
   } else {
