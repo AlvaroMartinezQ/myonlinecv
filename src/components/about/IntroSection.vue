@@ -1,5 +1,5 @@
 <template>
-  <p class="q-mr-md">
+  <p class="q-mr-md" style="line-height: 20px;">
     Hello! I'm Álvaro, a software engineer from Madrid, Spain.<br />
     I'm currently terminating my degree in CS at University Rey Juan Carlos in
     Madrid, while working in the IT sector.<br />
