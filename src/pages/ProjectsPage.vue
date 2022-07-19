@@ -1,11 +1,9 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    Hello from the {{ msg }}
-  </q-page>
+  <div class="row q-ma-md">
+    <ProjectListVue />
+  </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-
-const msg = ref('projects page');
+import ProjectListVue from 'src/components/projects/ProjectList.vue';
 </script>
