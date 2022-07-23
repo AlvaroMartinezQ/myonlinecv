@@ -7,13 +7,17 @@
           <q-separator />
           <q-card-section class="q-mx-sm">
             <div class="row">
-              <q-icon v-for="icon in entry.icon" v-bind:key="icon" :name="icon" size="2em" class="q-mr-sm" />
+              <q-icon v-for="icon in entry.icon" v-bind:key="icon" :name="icon" size="2em" class="q-mr-sm"
+                :color="!$q.dark.isActive ? 'black' : 'secondary'" />
             </div>
             <div class="row q-mt-sm">
-              {{ entry.long_description }}
-              <br>
-              <q-btn color="secondary" label="Codebase" :href="entry.repo_link" target="_blank" size="sm"
-                text-color="black" class="q-mt-sm" />
+              <div class="col-12">
+                {{ entry.long_description }}
+              </div>
+              <div class="col-12">
+                <q-btn color="secondary" label="Codebase" :href="entry.repo_link" target="_blank" size="sm"
+                  text-color="black" class="q-mt-sm" />
+              </div>
             </div>
           </q-card-section>
         </q-expansion-item>
@@ -30,3 +34,9 @@ import projects from './ProjectList';
 
 const $q = useQuasar();
 </script>
+
+<style scoped>
+.q-btn {
+  border-radius: 0%;
+}
+</style>
