@@ -2,20 +2,12 @@
   <div class="row items-center justify-evenly">
     <div class="col-12">
       <q-separator class="q-my-md"></q-separator>
-      <q-btn
-        v-for="link in links"
-        v-bind:key="link.name"
-        flat
-        color="primary"
-        class="q-mx-sm"
-        :href="link.url"
-        target="_blank"
-      >
-        <q-icon
-          :name="link.icon"
-          :color="$q.dark.isActive ? 'secondary' : 'black'"
-          size="2.5em"
-        />
+      <q-btn v-for="link in links" v-bind:key="link.name" flat color="primary" class="q-mx-sm" :href="link.url"
+        target="_blank">
+        <q-icon :name="link.icon" :color="$q.dark.isActive ? 'secondary' : 'black'" size="2.5em" />
+      </q-btn>
+      <q-btn flat color="primary" class="q-mx-sm" href="mailto:alvaroo2302@gmail.com">
+        <q-icon name="email" :color="$q.dark.isActive ? 'secondary' : 'black'" size="2.5em" />
       </q-btn>
     </div>
   </div>

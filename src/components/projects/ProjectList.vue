@@ -25,12 +25,18 @@
       </div>
       <div :class="$q.platform.is.mobile ? 'col-0' : 'col-2'"></div>
     </div>
+    <div class="row q-ma-md">
+      <div class="col-12 text-center q-mt-md">
+        <ContactLinks />
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useQuasar } from 'quasar';
 import projects from './ProjectList';
+import ContactLinks from 'src/components/contact/ContactLinks.vue';
 
 const $q = useQuasar();
 </script>
