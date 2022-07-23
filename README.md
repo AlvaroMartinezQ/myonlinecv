@@ -1,43 +1,7 @@
-# MyOnlineCV (myonlinecv)
+# MyOnlineCV (myonlinecv) ⚡
 
-Personal online cv
+Personal online cv/presentation page.
 
-## Install the dependencies
+You can find a [live deployment](https://alvaromartinezq.github.io/myonlinecv/#/) for the app in Github Pages.
 
-```bash
-yarn
-# or
-npm install
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-
-```bash
-npm run dev
-```
-
-### Lint the files
-
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-### Format the files
-
-```bash
-yarn format
-# or
-npm run format
-```
-
-### Build the app for production
-
-```bash
-quasar build
-```
-
-### Customize the configuration
-
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+Application uses [Vue](https://vuejs.org/) with [Quasar+Vite](https://quasar.dev/start/vite-plugin#introduction)
