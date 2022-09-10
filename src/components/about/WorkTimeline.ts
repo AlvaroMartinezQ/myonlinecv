@@ -10,7 +10,7 @@ const work_timeline = [
     title: 'Software engineer',
     subtitle: 'Experis | June 2021 - March 2022',
     side: 'left',
-    text: 'Work for an external company, in this case BASF, with technologies like: Python, FastApi, Vue (Vuetify), TS & JS, Docker, PostgreSQL, Nginx. During this period I was involved in the development of a chemist lab application for precipitations.',
+    text: 'Work for an external company, with technologies like: Python, FastApi, Vue (Vuetify), TS & JS, Docker, PostgreSQL, Nginx. During this period I was involved in the development of a chemist lab application for precipitations.',
     icon: 'terminal',
   },
   {

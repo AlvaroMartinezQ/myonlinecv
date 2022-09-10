@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import { useQuasar } from 'quasar';
-import { mdiLinkedin, mdiGithub } from '@mdi/js';
+import { mdiLinkedin, mdiGithub, mdiGitlab } from '@mdi/js';
 import { ref } from 'vue';
 import ContactLink from 'src/types/ContactLink';
 
@@ -23,9 +23,11 @@ const $q = useQuasar();
 
 const linkedin_link = ref(import.meta.env.VITE_LINK_LINKEDIN as string);
 const github_link = ref(import.meta.env.VITE_LINK_GITHUB as string);
+const gitlab_link = ref(import.meta.env.VITE_LINK_GITLAB as string);
 
 const links = ref([
   { name: 'LinkedIn', url: linkedin_link.value, icon: mdiLinkedin },
   { name: 'Github', url: github_link.value, icon: mdiGithub },
+  { name: 'Gitlab', url: gitlab_link.value, icon: mdiGitlab }
 ] as ContactLink[]);
 </script>
