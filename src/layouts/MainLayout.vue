@@ -3,11 +3,11 @@
     <q-header elevated>
       <div class="row gradient_style"></div>
       <q-toolbar>
-        <q-toolbar-title class="row align-center justify-center">
+        <q-toolbar-title :class="$q.platform.is.mobile ? 'row' : 'row align-center justify-center'">
           <q-tabs v-model="current_tab" class="text-secondary" inline-label v-if="!$q.platform.is.mobile">
             <q-tab v-for="tab in tabs" v-bind:key="tab.name" :name="tab.name" :icon="tab.icon" :label="tab.label" />
           </q-tabs>
-          <q-btn-dropdown color="secondary" label="Links" size="sm" text-color="black" v-else>
+          <q-btn-dropdown color="secondary" icon="menu" size="sm" text-color="black" class="align-right" v-else>
             <q-list>
               <q-item v-for="tab in tabs" v-bind:key="tab.name" clickable v-close-popup @click="current_tab = tab.name">
                 <q-item-section>
@@ -16,6 +16,7 @@
               </q-item>
             </q-list>
           </q-btn-dropdown>
+          <q-space v-if="$q.platform.is.mobile"></q-space>
           <q-toggle v-model="dark_mode" :color="dark_mode ? 'black' : 'white'"
             :icon="dark_mode ? 'dark_mode' : 'light_mode'" @click="$q.dark.set(dark_mode)" keep-color size="md" />
         </q-toolbar-title>
