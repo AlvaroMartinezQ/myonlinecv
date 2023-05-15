@@ -1,5 +1,6 @@
 <template>
   <div class="col-12 q-mt-md">
+    <h5 class="col-12 text-center q-mt-none q-mb-xs">Project list</h5>
     <div class="row q-mb-md" v-for="entry in projects" v-bind:key="entry.name">
       <div :class="$q.platform.is.mobile ? 'col-0' : 'col-2'"></div>
       <div :class="$q.platform.is.mobile ? 'col-12 q-mx-sm' : 'col-8'">
@@ -25,7 +26,7 @@
       </div>
       <div :class="$q.platform.is.mobile ? 'col-0' : 'col-2'"></div>
     </div>
-    <h6 class="col-12 text-center q-mt-md q-mb-xs">Some POCs I've created</h6>
+    <h6 class="col-12 text-center q-mt-md q-mb-xs">Some POCs</h6>
     <div class="row q-mb-md" v-for="entry in pocs" v-bind:key="entry.name">
       <div :class="$q.platform.is.mobile ? 'col-0' : 'col-2'"></div>
       <div :class="$q.platform.is.mobile ? 'col-12 q-mx-sm' : 'col-8'">
