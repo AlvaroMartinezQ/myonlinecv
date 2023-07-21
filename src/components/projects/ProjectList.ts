@@ -18,17 +18,31 @@ import {
   mdiAndroid,
   mdiAndroidStudio,
   mdiCellphone,
-  mdiThoughtBubbleOutline,
+  // mdiThoughtBubbleOutline,
   mdiCodeJson,
+  mdiGitlab,
+  mdiLanguagePython,
+  mdiClockIn,
+  mdiCalendarCheckOutline,
 } from '@mdi/js';
 
 const projects = [
   {
     name: 'App4Auctions',
     short_description: 'Online auction system - Final university project',
-    long_description: 'More details coming after its publish.',
-    repo_link: '',
-    icon: [mdiThoughtBubbleOutline],
+    long_description:
+      'Auctions & bids online live system. Scheduled tasks with Celery, WebSocket protocol communications and more.',
+    repo_link: 'https://gitlab.com/AlvaroMartinezQ/app4auctions',
+    icon: [
+      mdiGitlab,
+      mdiLinux,
+      mdiLanguagePython,
+      mdiVuejs,
+      mdiLanguageTypescript,
+      mdiDocker,
+      mdiClockIn,
+      mdiCalendarCheckOutline,
+    ],
   },
   {
     name: 'My-shell',
