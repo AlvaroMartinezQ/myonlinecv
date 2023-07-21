@@ -5,13 +5,13 @@
     </p>
     <p class="q-mr-md p_sty">
       I'm graduated by the Rey Juan Carlos I university in Computer Engineering, looking forward
-      to start an online MSc in Development and Operations.
+      to start an online MSc in Development and Operations and keep learning about cybersecurity
+      networks and cloud.
     </p>
-    <p class="q-mr-md p_sty">
+    <!-- <p class="q-mr-md p_sty">
       I'd describe myself as an enthusiast of cloud services, web applications and
-      networks. Looking forward to finish my studies and keep learning about
-      cybersecurity and cloud, while working in the IT sector.
-    </p>
+      networks.
+    </p> -->
   </div>
 </template>
 
