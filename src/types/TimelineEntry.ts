@@ -3,6 +3,7 @@ type TimelineEntry = {
   subtitle: string;
   side: 'right' | 'left';
   text: string;
+  link: string;
   icon: string;
 };
 

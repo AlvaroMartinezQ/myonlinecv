@@ -1,5 +1,12 @@
 const learn_timeline = [
   {
+    title: 'MSc DevOps',
+    subtitle: 'UNIR | September 2023 - Now',
+    side: 'left',
+    text: "During this period I've learnt different tacnologies related with the DevOps world. These tools include: Packer, Ansible or Terraform; as well as clous providers like AWS or GCP.",
+    icon: 'school',
+  },
+  {
     title: 'Computer engineering - CS',
     subtitle: 'URJC | September 2017 - July 2023',
     side: 'left',
