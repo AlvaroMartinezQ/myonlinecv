@@ -9,6 +9,14 @@ const work_timeline = [
   },
   {
     title: 'Software engineer',
+    subtitle: 'skinalyse (Freelance) | August 2024 - Now',
+    side: 'left',
+    text: 'Design and development of a mobile based application and backend service to handle data and requests. Expertise with technologies like DJango, PostgreSQL, Vue.js, Capacitor, Docker, Nginx and Azure. Mobile payments via Google Play Store and Apple Store.',
+    link: '',
+    icon: 'terminal',
+  },
+  {
+    title: 'Software engineer',
     subtitle:
       'Quiroga Centro Medico Estetico (Freelance) | July 2023 - October 2023',
     side: 'left',
@@ -18,7 +26,7 @@ const work_timeline = [
   },
   {
     title: 'Software engineer',
-    subtitle: 'Salon Digital (Freelance) | June 2023 - Now',
+    subtitle: 'Salon Digital (Freelance) | June 2023 - November 2023',
     side: 'left',
     text: 'Design and development of a software solution for private beauty salons. Expertise with technologies like FastAPI, MongoDB & Vue.js.',
     link: '',

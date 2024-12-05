@@ -28,6 +28,14 @@ import {
 
 const projects = [
   {
+    name: 'CodeFlow',
+    short_description: 'Local CI/CD environment',
+    long_description:
+      'Local CI/CD with Gitlab & Gitlab Runner on Minikube with Docker, all running locally!',
+    repo_link: 'https://gitlab.com/AlvaroMartinezQ/codeflow',
+    icon: [mdiGitlab, mdiLinux, mdiDocker],
+  },
+  {
     name: 'App4Auctions',
     short_description: 'Online auction system - Final university project',
     long_description:
