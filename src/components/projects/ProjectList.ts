@@ -18,15 +18,23 @@ import {
   mdiAndroid,
   mdiAndroidStudio,
   mdiCellphone,
-  // mdiThoughtBubbleOutline,
   mdiCodeJson,
   mdiGitlab,
   mdiLanguagePython,
   mdiClockIn,
   mdiCalendarCheckOutline,
+  mdiKubernetes,
 } from '@mdi/js';
 
 const projects = [
+  {
+    name: 'Application Monitoring',
+    short_description: 'Local monitoring workspace',
+    long_description:
+      'Local monitoring workspace with the Grafana stack (Loki, Mimir, Grafana, Alloy and more). All running locally with Docker and Kind. Coming soon!',
+    repo_link: '',
+    icon: [mdiKubernetes, mdiDocker],
+  },
   {
     name: 'CodeFlow',
     short_description: 'Local CI/CD environment',
