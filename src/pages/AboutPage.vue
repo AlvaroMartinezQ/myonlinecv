@@ -6,23 +6,35 @@
         <div class="col-10">
           <div class="row q-mx-md text-overline">
             <div class="col-6 text-center" v-if="!$q.platform.is.mobile">
-              <q-img src="~assets/amq-photo.jpg" class="personal_pic shadow-4" fit="cover">
+              <q-img
+                src="~assets/amq-photo.jpg"
+                class="personal_pic shadow-4"
+                fit="cover"
+              >
               </q-img>
             </div>
-            <div :class="$q.platform.is.mobile
-              ? 'col-12 text-justify'
-              : 'col-6 text-justify'
-              ">
+            <div
+              :class="
+                $q.platform.is.mobile
+                  ? 'col-12 text-justify'
+                  : 'col-6 text-justify'
+              "
+            >
               <IntroSectionVue />
             </div>
           </div>
           <q-separator class="q-my-md"></q-separator>
           <div class="row q-mx-md">
-            <div v-for="entry in time_sections" v-bind:key="entry.title" :class="$q.platform.is.mobile
-                ? 'col-12 text-center'
-                : 'col-6 text-center'
-              ">
-              <TimelineSectionVue :title="entry.title" :timeline="entry.timeline" :icon="entry.icon" />
+            <div
+              v-for="entry in time_sections"
+              v-bind:key="entry.title"
+              class="col-12 text-center"
+            >
+              <TimelineSectionVue
+                :title="entry.title"
+                :timeline="entry.timeline"
+                :icon="entry.icon"
+              />
             </div>
           </div>
         </div>

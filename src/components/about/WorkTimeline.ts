@@ -13,7 +13,7 @@ const work_timeline = [
     side: 'left',
     text: 'Design and development of a mobile based application and backend service to handle data and requests. Expertise with technologies like DJango, PostgreSQL, Vue.js, Capacitor, Docker, Nginx and Azure. Mobile payments via Google Play Store and Apple Store.',
     link: '',
-    icon: 'terminal',
+    icon: 'developer_mode',
   },
   {
     title: 'Software engineer',
@@ -22,7 +22,7 @@ const work_timeline = [
     side: 'left',
     text: 'Design and development of a web landing page. Expertise setting up the web certificates, web servers and full development of the webpage.',
     link: 'https://www.beautybyquiroga.com/',
-    icon: 'terminal',
+    icon: 'web',
   },
   {
     title: 'Software engineer',

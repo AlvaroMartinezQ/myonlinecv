@@ -1,23 +1,39 @@
 <template>
-  <q-timeline :layout="layout" color="secondary">
+  <q-timeline layout="loose" color="secondary">
     <q-timeline-entry heading>
-      <p class="text-h5">
-        <q-icon :name="props.icon" />&nbsp;
-        {{ props.title }}
+      <p class="text-h5 q-mb-none">
+        <q-icon :name="props.icon" />&nbsp; {{ props.title }}
       </p>
     </q-timeline-entry>
-    <q-timeline-entry v-for="entry in props.timeline" v-bind:key="entry.title" :title="entry.title" :subtitle="entry.text"
-      :side="entry.side" :icon="entry.icon">
+    <q-timeline-entry
+      v-for="entry in props.timeline"
+      v-bind:key="entry.title"
+      :title="entry.title"
+      :subtitle="entry.text"
+      :side="entry.side"
+      :icon="entry.icon"
+    >
       <p>
         {{ entry.subtitle }}
+      </p>
+      <p v-if="entry.url">
+        <q-btn
+          :href="entry.url"
+          :label="entry.urlText || 'View certificate'"
+          icon="open_in_new"
+          target="_blank"
+          color="primary"
+          size="md"
+          no-caps
+          square
+        />
       </p>
     </q-timeline-entry>
   </q-timeline>
 </template>
 
 <script setup lang="ts">
-import { useQuasar } from 'quasar';
-import { computed, PropType } from 'vue';
+import { PropType } from 'vue';
 import TimelineEntry from 'src/types/TimelineEntry';
 
 const props = defineProps({
@@ -33,12 +49,6 @@ const props = defineProps({
     type: String,
     required: true,
   },
-});
-
-const $q = useQuasar();
-
-const layout = computed(() => {
-  return $q.screen.lt.sm ? 'dense' : $q.screen.lt.md ? 'comfortable' : 'loose';
 });
 </script>
 
