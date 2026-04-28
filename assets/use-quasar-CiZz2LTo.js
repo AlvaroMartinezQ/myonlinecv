@@ -1,0 +1,1 @@
+import{M as e,x as t}from"./key-composition-B_Lk8TcW.js";var n={dark:{type:Boolean,default:null}};function r(e,n){return t(()=>e.dark===null?n.dark.isActive:e.dark)}function i(){return e(`_q_`)}export{n,r,i as t};

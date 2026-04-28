@@ -1,0 +1,1 @@
+import{A as e,F as t,I as n}from"./key-composition-B_Lk8TcW.js";import{l as r}from"./QBtn-COE660z5.js";function i(){let i=null,a=e();function o(){i!==null&&(clearTimeout(i),i=null)}return n(o),t(o),{removeTimeout:o,registerTimeout(e,t){o(),r(a)===!1&&(i=setTimeout(()=>{i=null,e()},t))}}}export{i as t};
