@@ -1,6 +1,6 @@
 {
   "name": "myonlinecv",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Personal online cv",
   "productName": "AMQ - CV",
   "author": "AlvaroMartinezQ <alvaroo2302@gmail.com>",
@@ -32,8 +32,7 @@
     "typescript": "^5.9.3"
   },
   "engines": {
-    "node": "^18 || ^16 || ^14.19",
-    "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
+    "node": ">= 22",
+    "npm": ">= 11.12.1"
   }
 }
