@@ -1,0 +1,1 @@
+import{G as e,W as t,z as n}from"./index-CVgEWdQy.js";import{l as r}from"./QBtn-DY6mDdYm.js";function i(){let i=null,a=n();function o(){i!==null&&(clearTimeout(i),i=null)}return e(o),t(o),{removeTimeout:o,registerTimeout(e,t){o(),r(a)||(i=setTimeout(()=>{i=null,e()},t))}}}export{i as t};
