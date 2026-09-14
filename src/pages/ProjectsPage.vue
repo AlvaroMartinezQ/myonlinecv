@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import ProjectListVue from 'src/components/projects/ProjectList.vue';
+import ProjectListVue from '@/components/projects/ProjectList.vue';
 </script>

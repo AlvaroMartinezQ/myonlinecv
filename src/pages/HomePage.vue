@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import HomeComponent from 'src/components/home/HomeComponent.vue';
+import HomeComponent from '@/components/home/HomeComponent.vue';
 </script>

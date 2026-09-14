@@ -34,7 +34,7 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue';
-import TimelineEntry from 'src/types/TimelineEntry';
+import TimelineEntry from '@/types/TimelineEntry';
 
 const props = defineProps({
   title: {

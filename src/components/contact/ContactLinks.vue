@@ -2,12 +2,32 @@
   <div class="row items-center justify-evenly">
     <div class="col-12">
       <q-separator class="q-my-md"></q-separator>
-      <q-btn v-for="link in links" v-bind:key="link.name" flat color="primary" class="q-mx-sm" :href="link.url"
-        target="_blank">
-        <q-icon :name="link.icon" :color="$q.dark.isActive ? 'secondary' : 'black'" size="2.5em" />
+      <q-btn
+        v-for="link in links"
+        v-bind:key="link.name"
+        flat
+        color="primary"
+        class="q-mx-sm"
+        :href="link.url"
+        target="_blank"
+      >
+        <q-icon
+          :name="link.icon"
+          :color="$q.dark.isActive ? 'secondary' : 'black'"
+          size="2.5em"
+        />
       </q-btn>
-      <q-btn flat color="primary" class="q-mx-sm" href="mailto:alvaroo2302@gmail.com">
-        <q-icon name="email" :color="$q.dark.isActive ? 'secondary' : 'black'" size="2.5em" />
+      <q-btn
+        flat
+        color="primary"
+        class="q-mx-sm"
+        href="mailto:alvaroo2302@gmail.com"
+      >
+        <q-icon
+          name="email"
+          :color="$q.dark.isActive ? 'secondary' : 'black'"
+          size="2.5em"
+        />
       </q-btn>
     </div>
   </div>
@@ -17,7 +37,7 @@
 import { useQuasar } from 'quasar';
 import { mdiLinkedin, mdiGithub, mdiGitlab } from '@mdi/js';
 import { ref } from 'vue';
-import ContactLink from 'src/types/ContactLink';
+import ContactLink from '@/types/ContactLink';
 
 const $q = useQuasar();
 
@@ -28,6 +48,6 @@ const gitlab_link = ref(import.meta.env.VITE_LINK_GITLAB as string);
 const links = ref([
   { name: 'LinkedIn', url: linkedin_link.value, icon: mdiLinkedin },
   { name: 'Github', url: github_link.value, icon: mdiGithub },
-  { name: 'Gitlab', url: gitlab_link.value, icon: mdiGitlab }
+  { name: 'Gitlab', url: gitlab_link.value, icon: mdiGitlab },
 ] as ContactLink[]);
 </script>

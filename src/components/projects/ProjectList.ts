@@ -1,4 +1,4 @@
-import { ProjectEntry } from 'src/types/ProjectEntry';
+import { ProjectEntry } from '@/types/ProjectEntry';
 import {
   mdiLanguageC,
   mdiBash,

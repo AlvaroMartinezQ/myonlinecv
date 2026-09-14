@@ -5,11 +5,15 @@
         <q-separator></q-separator>
       </div>
       <div :class="$q.platform.is.mobile ? 'col-12' : 'col-4'">
-        <q-img src="~assets/amq-photo.jpg" :class="
-          $q.platform.is.mobile
-            ? 'personal_pic_mobile shadow-4'
-            : 'personal_pic shadow-4'
-        " fit="cover">
+        <q-img
+          src="~@/assets/amq-photo.jpg"
+          :class="
+            $q.platform.is.mobile
+              ? 'personal_pic_mobile shadow-4'
+              : 'personal_pic shadow-4'
+          "
+          fit="cover"
+        >
         </q-img>
       </div>
       <div :class="$q.platform.is.mobile ? 'col-0' : 'col-4'">
@@ -33,7 +37,7 @@
 
 <script setup lang="ts">
 import { useQuasar } from 'quasar';
-import ContactLinksVue from 'src/components/contact/ContactLinks.vue';
+import ContactLinksVue from '@/components/contact/ContactLinks.vue';
 
 const $q = useQuasar();
 </script>

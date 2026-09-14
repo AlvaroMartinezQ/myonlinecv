@@ -3,26 +3,26 @@ import { RouteRecordRaw } from 'vue-router';
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('@/layouts/MainLayout.vue'),
     children: [
       {
         path: '',
-        component: () => import('src/pages/HomePage.vue'),
+        component: () => import('@/pages/HomePage.vue'),
         name: 'home_page',
       },
       {
         path: 'about',
-        component: () => import('src/pages/AboutPage.vue'),
+        component: () => import('@/pages/AboutPage.vue'),
         name: 'about_page',
       },
       {
         path: 'projects',
-        component: () => import('src/pages/ProjectsPage.vue'),
+        component: () => import('@/pages/ProjectsPage.vue'),
         name: 'projects_page',
       },
       {
         path: 'contact',
-        component: () => import('src/pages/ContactPage.vue'),
+        component: () => import('@/pages/ContactPage.vue'),
         name: 'contact_page',
       },
     ],
@@ -30,7 +30,7 @@ const routes: RouteRecordRaw[] = [
   // Always leave this as last
   {
     path: '/:catchAll(.*)*',
-    component: () => import('src/pages/NotFoundPage.vue'),
+    component: () => import('@/pages/NotFoundPage.vue'),
   },
 ];
 

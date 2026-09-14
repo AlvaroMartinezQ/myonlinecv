@@ -7,7 +7,7 @@
           <div class="row q-mx-md text-overline">
             <div class="col-6 text-center" v-if="!$q.platform.is.mobile">
               <q-img
-                src="~assets/amq-photo.jpg"
+                src="~@/assets/amq-photo.jpg"
                 class="personal_pic shadow-4"
                 fit="cover"
               >
@@ -48,12 +48,12 @@
 <script setup lang="ts">
 import { useQuasar } from 'quasar';
 import { ref } from 'vue';
-import ContactLinksVue from 'src/components/contact/ContactLinks.vue';
-import IntroSectionVue from 'src/components/about/IntroSection.vue';
-import TimelineSectionVue from 'src/components/about/TimelineSection.vue';
-import TimelineEntry from 'src/types/TimelineEntry';
-import w_timeline from 'src/components/about/WorkTimeline';
-import l_timeline from 'src/components/about/LearnTimeline';
+import ContactLinksVue from '@/components/contact/ContactLinks.vue';
+import IntroSectionVue from '@/components/about/IntroSection.vue';
+import TimelineSectionVue from '@/components/about/TimelineSection.vue';
+import TimelineEntry from '@/types/TimelineEntry';
+import w_timeline from '@/components/about/WorkTimeline';
+import l_timeline from '@/components/about/LearnTimeline';
 
 const $q = useQuasar();
 
